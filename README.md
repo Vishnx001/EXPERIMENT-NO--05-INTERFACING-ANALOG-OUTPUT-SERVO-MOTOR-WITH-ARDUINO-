@@ -1,8 +1,8 @@
 ###  DATE: 
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: VISHNU VARDHAN S
+###  ROLL NO :212221220059
+###  DEPARTMENT: IT
 
 
 # EXPERIMENT NO 05 INTERFACING ANALOG OUTPUT SERVO MOTOR WITH ARDUINO
@@ -36,11 +36,11 @@ Control
 An external controller (such as the Arduino) tells the servo where to go with a signal know as pulse proportional modulation (PPM) or pulse code modulation (which is often confused with pulse width modulation, PWM). PWM uses 1 to 2ms out of a 20ms time period to encode its information.
  
  
- ![image](https://user-images.githubusercontent.com/36288975/163544482-3027136f-7135-4f3d-a23f-8dc2fe04194d.png)
+![Screenshot 2024-03-14 111159](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/e7e97bfe-f7a2-4980-a183-36bd754cc3be)
 
 ### Figure-02 SERVO MOTOR PINS
 
- ![image](https://user-images.githubusercontent.com/36288975/163544513-ca497421-e6ba-4f91-871f-5cfba77f22a8.png)
+![Screenshot 2024-03-14 111239](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/de0b29e0-f6d5-4ac0-a2fa-00eee6523338)
 
 
 ### Figure-03 SERVO MOTOR OVERVIEW 
@@ -56,8 +56,8 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 
 CIRCUIT DIAGRAM
  
- 
- ![image](https://user-images.githubusercontent.com/36288975/163544618-6eb8a7b5-7f1a-428a-8d9f-fd899b145efb.png)
+
+![Screenshot 2024-03-14 111239](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/b000400c-bf51-452d-b42e-9797bc7c9b54)
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 
@@ -75,7 +75,36 @@ CIRCUIT DIAGRAM
 
 ### PROGRAM :
  
+#include <Servo.h>
+Servo s1;
+int pos = 0;
 
+void setup()
+{
+  s1.attach(9);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ for (pos=0;pos<=180;pos+=1)
+  {
+   s1.write(pos);
+   delay(20);
+   //Serial.print("Angle=");
+   Serial.println(pos);
+   		
+ }
+  
+  for (pos=180;pos>=0;pos-=1)
+  {
+   s1.write(pos);
+   delay(20);
+   //Serial.print("Angle=");
+   Serial.println(pos);
+   		
+ }
+}
 
 
 
