@@ -40,7 +40,6 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 
 ### Figure-02 SERVO MOTOR PINS
 
-![Screenshot 2024-03-14 111239](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/de0b29e0-f6d5-4ac0-a2fa-00eee6523338)
 
 
 ### Figure-03 SERVO MOTOR OVERVIEW 
@@ -57,7 +56,8 @@ An external controller (such as the Arduino) tells the servo where to go with a 
 CIRCUIT DIAGRAM
  
 
-![Screenshot 2024-03-14 111239](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/b000400c-bf51-452d-b42e-9797bc7c9b54)
+
+![Screenshot 2024-03-14 111239](https://github.com/Vishnx001/EXPERIMENT-NO--05-INTERFACING-ANALOG-OUTPUT-SERVO-MOTOR-WITH-ARDUINO-/assets/134037148/e96e0336-07a2-4645-8f80-06e4d95dfc68)
 
 ### FIGURE 04 CIRCUIT DIAGRAM
 
